@@ -50,7 +50,7 @@ int main() {
                 printf("Hasta luego.\n");
                 break;
             default:
-                printf("Opción no valida.\n");
+                printf("Opcion no valida.\n");
         }
 
     } while (opc != 8);
