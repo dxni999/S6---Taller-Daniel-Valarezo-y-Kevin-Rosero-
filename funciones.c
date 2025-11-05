@@ -32,7 +32,7 @@ void ingresarProducto(char id[10][10], char nombre[10][20], float precio[10], in
     while (1) {
         printf("Ingrese el stock del producto %d: ", *cont);
         if (scanf("%d", &stock[*cont]) != 1 || stock[*cont] <= 0) {
-            printf("Entrada inválida. Ingrese un número entero positivo.\n");
+            printf("Entrada invalida. Ingrese un numero entero positivo.\n");
             while (getchar() != '\n'); // limpiar buffer
         } else {
             break;
@@ -109,13 +109,13 @@ void verProductos(char id[10][10], char nombre[10][20], float precio[10], int st
         return;
     }
 
-    printf("\n-------- LISTA DE PRODUCTOS --------\n");
-    printf("#\tID\t\tNombre\t\t\tPrecio\t\tStock\n");
-    printf("------------------------------------------------------------\n");
+    printf("\n                      -------- LISTA DE PRODUCTOS --------\n");
+    printf("#\tID\t\tNombre\t\t\t\tPrecio\t\tStock\n");
+    printf("------------------------------------------------------------------------------\n");
 
     for (int i = 0; i < cont; i++) {
-        printf("%d\t%s\t\t%-15s\t%.2f\t\t%d\n", i + 1, id[i], nombre[i], precio[i], stock[i]);
+        printf("%d\t%s\t\t%-15s\t\t\t%.2f\t\t%d\n", i + 1, id[i], nombre[i], precio[i], stock[i]);
     }
 
-    printf("------------------------------------------------------------\n");
+    printf("------------------------------------------------------------------------------\n");
 }
