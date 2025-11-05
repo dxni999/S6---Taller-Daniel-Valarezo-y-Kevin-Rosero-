@@ -10,7 +10,7 @@ int main() {
     char nombreBuscado[20];
 
     do {
-        printf("\nSelecciona una opción:\n");
+        printf("\nSelecciona una opcion:\n");
         printf("1. Ingresar un producto\n");
         printf("2. Calcular el precio total del inventario\n");
         printf("3. Producto mas caro\n");
