@@ -102,7 +102,7 @@ void buscarProducto(char nombre[10][20], float precio[10], int cont, char nombre
     }
     printf("Producto no encontrado.\n");
 }
-// 🔹 Nueva función: Ver todos los productos
+// Ver todos los productos
 void verProductos(char id[10][10], char nombre[10][20], float precio[10], int stock[10], int cont) {
     if (cont == 0) {
         printf("No hay productos registrados.\n");
