@@ -10,11 +10,11 @@ int main() {
     char nombreBuscado[20];
 
     do {
-        printf("\nSelecciona una opcion:\n");
+        printf("\nSelecciona una opción:\n");
         printf("1. Ingresar un producto\n");
         printf("2. Calcular el precio total del inventario\n");
-        printf("3. Producto mas caro\n");
-        printf("4. Producto mas barato\n");
+        printf("3. Producto más caro\n");
+        printf("4. Producto más barato\n");
         printf("5. Precio promedio\n");
         printf("6. Buscar un producto\n");
         printf("7. Ver todos los productos\n");
@@ -24,7 +24,7 @@ int main() {
 
         switch (opc) {
             case 1:
-                ingresarProducto(id, nombre, precio, stock, &cont);
+                cont = ingresarProducto(id, nombre, precio, stock, cont);
                 break;
             case 2:
                 printf("El precio total del inventario es: %.2f\n", calcularTotalInventario(precio, stock, cont));
@@ -50,7 +50,7 @@ int main() {
                 printf("Hasta luego.\n");
                 break;
             default:
-                printf("Opcion no valida.\n");
+                printf("Opción no válida.\n");
         }
 
     } while (opc != 8);
