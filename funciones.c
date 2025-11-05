@@ -5,7 +5,7 @@
 // Función para ingresar un producto
 int ingresarProducto(char id[10][10], char nombre[10][20], float precio[10], int stock[10], int cont) {
     if (cont >= 10) {
-        printf("No se pueden ingresar más productos. Límite alcanzado.\n");
+        printf("No se pueden ingresar mas productos. Limite alcanzado.\n");
         return cont;
     }
 
@@ -21,7 +21,7 @@ int ingresarProducto(char id[10][10], char nombre[10][20], float precio[10], int
     while (1) {
         printf("Ingrese el precio del producto %d: ", cont);
         if (scanf("%f", &precio[cont]) != 1 || precio[cont] <= 0) {
-            printf("Entrada inválida. Ingrese un número positivo.\n");
+            printf("Entrada invalida. Ingrese un numero positivo.\n");
             while (getchar() != '\n');
         } else {
             break;
@@ -31,7 +31,7 @@ int ingresarProducto(char id[10][10], char nombre[10][20], float precio[10], int
     while (1) {
         printf("Ingrese el stock del producto %d: ", cont);
         if (scanf("%d", &stock[cont]) != 1 || stock[cont] <= 0) {
-            printf("Entrada inválida. Ingrese un número entero positivo.\n");
+            printf("Entrada invalida. Ingrese un numero entero positivo.\n");
             while (getchar() != '\n');
         } else {
             break;
